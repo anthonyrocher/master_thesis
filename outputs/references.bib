@@ -1,67 +1,3 @@
-\documentclass{article}
-\usepackage{graphicx}
-\usepackage{geometry}
-\usepackage{natbib}
-
-\title{Research proposal}
-\author{Anthony Rocher}
-\date{}
-
-\begin{document}
-
-\maketitle
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Motivation \& Research Question}
-
-Global warming is likely to reshape risk mapping in the near future. Climate-related shocks such as wildfires, floods, and hurricanes may expose previously unaffected areas and populations to new forms of risk. Once such exposure becomes apparent, how does it impact real estate and housing markets in the affected areas? Moreover, if a parcel of land shares similar characteristics with another that has recently experienced a climate shock, \textbf{what is the economic cost of being exposed tow} that \textbf{risk?}
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\section{What I want to do}
-
-In this master’s dissertation, I study how exposure to seismic and tsunami risk affects land and housing prices. To do so, I match seismic hazard maps and tsunami inundation (contour) maps with real estate and housing price data. Consistent with the existing literature, I aim to show that prices in exposed areas are significantly affected when a natural disaster occurs elsewhere—that is, when the underlying risk becomes salient or is revealed. I focus in particular on the 2011 Fukushima catastrophe, before extending the analysis over time to other events. Finally, using consumption survey data, I want to examine how consumers respond to increased exposure following the disaster, notably in terms of insurance uptake, among other behavioral adjustments.
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Literature Review}
-
-My research contributes to the literature on the hedonic pricing model introduced by \cite{rosen_hedonic_1974}, which has become a standard framework for examining the impact of natural disasters on asset prices. This approach has been widely applied to wildfires \citep{lopez_wildfire_2025}, floods \citep{bin_effects_2004, atreya_forgetting_2013, atreya_seeing_2015, li_flood_2018}, hurricanes \citep{fisher_impact_2021, meltzer_sandy_2021}, tsunamis \citep{sato_impact_2021}, and earthquakes \citep{brookshire_test_1985, beron_analysis_1997, naoi_earthquake_2009, ikefuji_earthquake_2022}, with most studies documenting negative—and often substantial—effects on property values.
-
-My work also relates to the literature on risk perception and valuation. \cite{brookshire_test_1985} show that a 1974 Californian state law led individuals to place a high value on low-probability earthquake hazards. \cite{bin_effects_2004} estimate and compare the effects of flood risk on property prices before and after Hurricane Floyd (the 1999 flooding in North Carolina), showing that properties located within floodplains experience larger price discounts. \cite{bin_premium_2013} revisit these results and find that the associated risk premia dissipate relatively quickly, even at the same locations.
-
-In the specific context of Japan, which is particularly prone to seismic activity, \cite{nakagawa_impact_2010} and \cite{hidano_effect_2015} show that property prices in low-risk zones are higher. \cite{naoi_earthquake_2009} estimate individuals’ valuation of earthquake risk using nationwide panel data on seismic hazard information and show that house prices and rents are discounted following major earthquakes in affected areas. \cite{ikefuji_earthquake_2022} analyze the five largest Japanese cities and demonstrate that objective earthquake probabilities significantly affect real estate prices. Although their time-series approach is rigorous, they do not account for other natural disaster risks, which I aim to control for as part of my contribution.
-
-My main contribution is to account for varying degrees of exposure within areas classified as exposed. First, I use contour maps to assess whether relative protection mitigates price declines, allowing me to jointly consider earthquake and tsunami risk. Second, I rely on more granular data to examine not only land and real estate prices but also housing prices specifically.
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Data}
-
-\subsection{Land \& Housing Prices}
-
-The main dataset comes from the Ministry of Land, Infrastructure, Transport, and Tourism (MLIT), which provides self-reported real estate transaction prices at three-month intervals from 2003 up to now. The data include land prices (my main dependent variable), as well as detailed information on location and land characteristics, allowing for a very rare and high level of spatial granularity. For housing prices, I am applying for access to the LIFULL HOME’S dataset, a major real estate information service in Japan. This dataset contains highly detailed observations and would allow for a more precise analysis of housing market responses.
-
-\subsection{Risk Mapping}
-
-Seismic hazard maps are obtained from the Japan Seismic Hazard Information Station (J-SHIS), which provides geolocated seismic activity records that can be matched to property locations. Tsunami inundation maps are available from the Japan Meteorological Agency, along with other risk maps that will be useful for controlling for additional natural disasters (such as typhoons).
-
-\subsection{Additional Data}
-
-I use panel data on Japanese household consumption, including information on rents and insurance uptake, with a particular focus on the period following the 2011 Great East Japan Earthquake.
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Expected Results}
-
-Consistent with the literature, I expect exposure to seismic and tsunami risk to negatively affect prices, reflecting a premium paid to avoid vulnerability. However, the magnitude of the price decline is likely to depend on the degree to which land or housing is effectively exposed to these risks.
-
-I believe this research has external validity insofar as the underlying threat is comparable across contexts. More broadly, my interest lies in the consequences for individuals, and—looking ahead to a potential PhD research agenda—I would be keen to study how natural disasters reshape the spatial and socioeconomic structure of cities.
-
-\bibliographystyle{apalike}
-\bibliography{references}
-
 @article{ikefuji_earthquake_2022,
 	title = {Earthquake {Risk} {Embedded} in {Property} {Prices}: {Evidence} {From} {Five} {Japanese} {Cities}},
 	volume = {117},
@@ -413,6 +349,3 @@ url={https://ideas.repec.org/a/eee/regeco/v86y2021ics0166046220302933.html},
 }
 
 }
-
-\end{document}
-
