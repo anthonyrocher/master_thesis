@@ -1,23 +1,20 @@
 ---
-title: "Accurate Estimation of Small Effects: Illustration Through Air Pollution and Health"
-image: "images/site/illustration_car.png"
-favicon: images/site/favicon.ico
+title: "I can insert an image in this page"
 format: 
   html:
     page-layout: full
 about:
   template: trestles
-  image: "images/site/illustration_car.png"
   links:
     - icon: github
       text: GitHub
-      url: "https://github.com/vincentbagilet/inference_pollution"
+      url: "https://github.com/anthonyrocher/master_thesis"
     - icon: person
       text: Vincent Bagilet
-      url: "https://vincentbagilet.github.io/"
+      url: "https://anthonyrocher.io/"
 ---
 
-
+Hi ! I love fish and chips !
 
 
 
