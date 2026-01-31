@@ -1,53 +1,16 @@
 ---
-title: "Results of Prospective Power Simulations"
-date: "`r Sys.Date()`"
-output: 
-  distill::distill_article:
-    toc: true
-editor_options: 
-  chunk_output_type: console
+title: "Master's Thesis in Progress"
+# image: "images/site/illustration_car.png"
+# favicon: images/site/favicon.ico
+# angle: 130
+site: distill::distill_website
+# links:
+  # - label: '`r fontawesome::fa("github")` GitHub'
+  #   url: "https://github.com/vincentbagilet/inference_pollution"
+  # - label: '`r fontawesome::fa("user")` Vincent Bagilet'
+    # url: "https://vincentbagilet.github.io/"
+output:
+  postcards::trestles
 ---
-
-```{=html}
-<style>
-body {
-text-align: justify}
-</style>
-```
-
-```{r setup, include=FALSE}
-# code chunk option
-knitr::opts_chunk$set(
-  echo = FALSE,
-  message = FALSE,
-  warning = FALSE,
-  # layout = "l-body-outset",
-  dpi = 300,
-  cache.path = "cache/",
-  cache = FALSE,
-  fig.path = "images/sim_results/",
-  out.width = "85%",
-  fig.align = "center"
-)
-```
-
-# Loading Packages
-
-We load the required packages and the data:
-
-```{r loading_packages, code_folding="Show the packages used", results='hide'}
-library("groundhog")
-packages <- c(
-  "here",
-  "tidyverse", 
-  "knitr",
-  "patchwork", 
-  "mediocrethemes"
-  # "vincentbagilet/mediocrethemes"
-)
-
-# groundhog.library(packages, "2022-11-28")
-lapply(packages, library, character.only = TRUE)
-
-set_mediocre_all(pal = "leo")
-```
+ 
+Hi and welcome!
