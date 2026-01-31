@@ -1,0 +1,64 @@
+---
+title: "workflow"
+format:
+  html:
+    toc: true
+editor: visual
+---
+
+::: callout-note
+## Alert
+
+This is some information that you should pay attention to about the MLIT dataset analysis.
+:::
+
+The objective of this web page is twofold:
+
+-   to clean and explore the MLIT which will be the main one for my master's thesis and
+
+<!-- -->
+
+-   to learn QGIS and generate risk maps and real estate price maps, and their correlation.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  results = 'hide',
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+### The MLIT Dataset
+
+Data can be found on the MLIT Dataset : <https://www.reinfolib.mlit.go.jp/realEstatePrices/>. It contains all the real estates price transactions all over Japan since 2003.
+
+### Packages
+
+Below are the packages you need to install if you want the following code to work:
+
+```{r}
+library(tidyverse)
+library(readr)
+library(haven)
+```
+
+### Import
+
+I use the data already cleaned by Ikefuji & al. for a first analysis. I then will clean it myself.
+
+```{r}
+library(readr)
+
+#df_raw <- read_csv("/Users/anthony/Desktop/master_thesis/data/raw/mlit/28_Hyogo_Prefecture_20053_20252_en_fixed.csv")
+#df <- df_raw
+```
+
+### Summary
+
+First, Let's take a look at the MLIT dataset by printing the first 10 rows:
+
+```{r}
+#df |>
+#  mutate(N = 10)
+```

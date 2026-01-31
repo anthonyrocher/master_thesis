@@ -1,16 +1,13 @@
 ---
-title: "Master's Thesis in Progress"
-# image: "images/site/illustration_car.png"
-# favicon: images/site/favicon.ico
-# angle: 130
-site: distill::distill_website
-# links:
-  # - label: '`r fontawesome::fa("github")` GitHub'
-  #   url: "https://github.com/vincentbagilet/inference_pollution"
-  # - label: '`r fontawesome::fa("user")` Vincent Bagilet'
-    # url: "https://vincentbagilet.github.io/"
-output:
-  postcards::trestles
+title: "Seismic Hazard Mapping In Japan: effects on land and real estate prices"
+format: 
+  html:
+    toc: true
+editor: visual
 ---
  
 Hi and welcome!
+
+
+
+
