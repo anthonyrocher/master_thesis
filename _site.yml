@@ -1,5 +1,6 @@
 name: "."
 title: "Seismic Risk in Japan"
+base_url: https://github.com/anthonyrocher/master_thesis
 output_dir: "docs"
 exclude: ["Documents", "R"]
 navbar:
@@ -9,7 +10,7 @@ navbar:
     - text: "Research Proposal"
       href: futurerp.pdf
     - text: "On-going Paper"
-      href: intuition.html
+      href: futurepaper.pdf
     - text: "Literature review"
     - text: "Workflow"
       href: workflow.html
