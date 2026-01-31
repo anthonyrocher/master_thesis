@@ -1,0 +1,17 @@
+name: "."
+title: "Seismic Risk in Japan"
+output_dir: "docs"
+exclude: ["Documents", "R"]
+navbar:
+  right:
+    # - text: "Home"
+    #   href: index.html
+    - text: "Research Proposal"
+      href: futurerp.pdf
+    - text: "On-going Paper"
+      href: intuition.html
+    - text: "Literature review"
+    - text: "Workflow"
+      href: workflow.html
+  search: false
+output: distill::distill_article
