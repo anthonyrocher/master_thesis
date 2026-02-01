@@ -1,20 +1,16 @@
-project:
-  type: website
-  output-dir: docs
-
-website:
+name: " master_thesis"
+title: "Master's Thsis in Progress"
+navbar:
   title: "Seismic Risk in Japan"
-  navbar:
-    right:
-      - text: "Research Proposal"
-        href: futurerp.pdf
-      - text: "On-going Paper"
-        href: futurepaper.pdf
-      - text: "Literature review"
-        href: literature.html
-      - text: "Workflow"
-        href: workflow.html
-
-format:
-  html:
-    theme: cosmo
+  right:
+    - text: "Research Proposal"
+    href: futurerp.pdf
+    - text: "On-going Paper"
+    href: futurepaper.pdf
+    - text: "Literature review"
+    href: literature.html
+    - text: "Workflow"
+    href: workflow.html
+output:
+  distill::distill_article:
+    css: styles.css
