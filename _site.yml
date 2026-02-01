@@ -1,4 +1,5 @@
 name: " master_thesis"
+base-url  : "/master_thesis/"
 title: "Master's Thsis in Progress"
 navbar:
   title: "Seismic Risk in Japan"
@@ -7,8 +8,6 @@ navbar:
     href: futurerp.pdf
     - text: "On-going Paper"
     href: futurepaper.pdf
-    - text: "Literature review"
-    href: literature.html
     - text: "Workflow"
     href: workflow.html
 output:
