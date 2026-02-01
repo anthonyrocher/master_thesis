@@ -46,6 +46,13 @@
     "href": "index.html#the-mlit-dataset",
     "title": "Seismic Hazard Mapping In Japan: effects on land and real estate prices",
     "section": "The MLIT Dataset",
-    "text": "The MLIT Dataset\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "The MLIT Dataset"
+  },
+  {
+    "objectID": "index.html#motivation",
+    "href": "index.html#motivation",
+    "title": "Seismic Hazard Mapping In Japan: effects on land and real estate prices",
+    "section": "Motivation",
+    "text": "Motivation"
   }
 ]

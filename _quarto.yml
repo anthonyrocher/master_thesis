@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  site-url: https://github.com/anthonyrocher/master_thesis/_site/
+  site-url: https://anthonyrocher.github.io/master_thesis
   title: "Master's Thesis"
   navbar:
     right:
@@ -19,7 +19,6 @@ website:
     type: primary
     position: below-navbar
   
-
 format:
   html:
     theme: cosmo

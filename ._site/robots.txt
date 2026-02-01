@@ -1,0 +1,1 @@
+Sitemap: https://github.com/anthonyrocher/master_thesis/_site/sitemap.xml
