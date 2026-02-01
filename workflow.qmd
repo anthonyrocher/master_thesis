@@ -8,7 +8,7 @@ This page describes my workflow.
 
 ### Data wrangling
 
-First, set up your environment.
+Data can be found on the MLIT Dataset : https://www.reinfolib.mlit.go.jp/realEstatePrices/. It contains all the real estates price transactions all over Japan since 2003.
 
 ```{r}
 # Load libraries
@@ -28,6 +28,11 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 ```
 
 ### Analysis
+
+```{r}
+library(ggplot2)
+```
+
 
 Document your findings and conclusions.
 

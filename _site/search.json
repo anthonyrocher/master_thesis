@@ -25,14 +25,14 @@
     "href": "workflow.html",
     "title": "Workflow",
     "section": "",
-    "text": "This page describes my workflow.\n\n\nFirst, set up your environment.\n\n# Load libraries\nlibrary(ggplot2)\n\n\n\n\nPerform your analysis here.\n\n# Example plot\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal() +\n  labs(title = \"Car Weight vs MPG\")\n\n\n\n\n\n\n\n\n\n\n\nDocument your findings and conclusions.\n\nBack to Home"
+    "text": "This page describes my workflow.\n\n\nData can be found on the MLIT Dataset : https://www.reinfolib.mlit.go.jp/realEstatePrices/. It contains all the real estates price transactions all over Japan since 2003.\n\n# Load libraries\nlibrary(ggplot2)\n\n\n\n\nPerform your analysis here.\n\n# Example plot\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal() +\n  labs(title = \"Car Weight vs MPG\")\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\n\nDocument your findings and conclusions.\n\nBack to Home"
   },
   {
     "objectID": "workflow.html#my-workflow",
     "href": "workflow.html#my-workflow",
     "title": "Workflow",
     "section": "",
-    "text": "This page describes my workflow.\n\n\nFirst, set up your environment.\n\n# Load libraries\nlibrary(ggplot2)\n\n\n\n\nPerform your analysis here.\n\n# Example plot\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal() +\n  labs(title = \"Car Weight vs MPG\")\n\n\n\n\n\n\n\n\n\n\n\nDocument your findings and conclusions.\n\nBack to Home"
+    "text": "This page describes my workflow.\n\n\nData can be found on the MLIT Dataset : https://www.reinfolib.mlit.go.jp/realEstatePrices/. It contains all the real estates price transactions all over Japan since 2003.\n\n# Load libraries\nlibrary(ggplot2)\n\n\n\n\nPerform your analysis here.\n\n# Example plot\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal() +\n  labs(title = \"Car Weight vs MPG\")\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\n\nDocument your findings and conclusions.\n\nBack to Home"
   },
   {
     "objectID": "index.html#intuition",
