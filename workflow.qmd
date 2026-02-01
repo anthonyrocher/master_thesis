@@ -6,7 +6,7 @@ title: "Workflow"
 
 This page describes my workflow.
 
-### Step 1: Setup
+### Data wrangling
 
 First, set up your environment.
 
@@ -15,7 +15,7 @@ First, set up your environment.
 library(ggplot2)
 ```
 
-### Step 2: Analysis
+### Data cleaning
 
 Perform your analysis here.
 
@@ -27,7 +27,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   labs(title = "Car Weight vs MPG")
 ```
 
-### Step 3: Report
+### Analysis
 
 Document your findings and conclusions.
 
