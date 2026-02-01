@@ -10,6 +10,12 @@ website:
         href: index.html
       - text: "Workflow"
         href: workflow.html
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "**Alert** - Page under construction."
+    type: primary
+    position: below-navbar
 
 format:
   html:
