@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  site-url: https://github.com/anthonyrocher/master_thesis
+  site-url: https://github.com/anthonyrocher/master_thesis/_site/
   title: "Master's Thesis"
   navbar:
     right:
