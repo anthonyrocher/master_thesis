@@ -14,7 +14,6 @@ website:
         href: literature.html
       - text: "Workflow"
         href: workflow.html
-    search: false
 
 format:
   html:
