@@ -1,14 +1,14 @@
 ---
-title: "Master's Thesis"
+title: "Seismic Hazard Mapping In Japan: effects on land and real estate prices"
 format: html
 editor: visual
 ---
 
-## Quarto
+## Intuition
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-## Running Code
+## The MLIT Dataset
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 

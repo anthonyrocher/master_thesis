@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "My Quarto Website"
+  title: "Master's Thesis"
   navbar:
     left:
       - text: "Home"
