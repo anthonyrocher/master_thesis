@@ -1,0 +1,36 @@
+---
+title: "Workflow"
+---
+
+## My Workflow
+
+This page describes my workflow.
+
+### Step 1: Setup
+
+First, set up your environment.
+
+```{r}
+# Load libraries
+library(ggplot2)
+```
+
+### Step 2: Analysis
+
+Perform your analysis here.
+
+```{r}
+# Example plot
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  theme_minimal() +
+  labs(title = "Car Weight vs MPG")
+```
+
+### Step 3: Report
+
+Document your findings and conclusions.
+
+------------------------------------------------------------------------
+
+[Back to Home](index.html)
