@@ -5,7 +5,7 @@ project:
 website:
   title: "Master's Thesis"
   navbar:
-    left:
+    right:
       - text: "Home"
         href: index.html
       - text: "Workflow"
@@ -16,6 +16,8 @@ website:
     content: "**Alert** - Page under construction."
     type: primary
     position: below-navbar
+    
+site-url: https://github.com/anthonyrocher/master_thesis
 
 format:
   html:
