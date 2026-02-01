@@ -1,20 +1,23 @@
 ---
-title: "I can insert an image in this page"
-format: 
-  html:
-    page-layout: full
-about:
-  template: trestles
-  links:
-    - icon: github
-      text: GitHub
-      url: "https://github.com/anthonyrocher/master_thesis"
-    - icon: person
-      text: Vincent Bagilet
-      url: "https://anthonyrocher.io/"
+title: "Accurate Estimation of Small Effects: Illustration Through Air Pollution and Health"
+image: "images/site/illustration_car.png"
+favicon: images/site/favicon.ico
+angle: 130
+site: distill::distill_website
+links:
+  # - label: '`r fontawesome::fa("github")` GitHub'
+  #   url: "https://github.com/vincentbagilet/inference_pollution"
+  - label: '`r fontawesome::fa("user")` Vincent Bagilet'
+    url: "https://vincentbagilet.github.io/"
+output:
+  postcards::trestles
 ---
+ 
+Hi and welcome!
 
-Hi ! I love fish and chips !
+This is the website for the paper [Accurate Estimation of Small Effects: Illustration Through Air Pollution and Health](inference_pollution_paper.pdf). It gathers the paper, all the code and some additional material.
+
+In this paper, I assess the ability of various research designs in measuring small effects, that of air pollution on health in the short-term. 
 
 
 

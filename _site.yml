@@ -1,15 +1,20 @@
-name: " master_thesis"
-base-url  : "/master_thesis/"
-title: "Master's Thsis in Progress"
+name: "."
+title: "Estimating Small Effects"
+theme: air_pollution_website.css
+favicon: images/site/favicon.ico
+output_dir: "docs"
+exclude: ["Documents", "R"]
 navbar:
-  title: "Seismic Risk in Japan"
+  # logo: "images/mask_3.png"
   right:
-    - text: "Research Proposal"
-    href: futurerp.pdf
-    - text: "On-going Paper"
-    href: futurepaper.pdf
-    - text: "Workflow"
-    href: workflow.html
-output:
-  distill::distill_article:
-    css: styles.css
+    # - text: "Home"
+    #   href: index.html
+    - text: "Paper"
+      href: inference_pollution_paper.pdf
+    - text: "Data wrangling"
+      href: data_wrangling.html
+    - text: "Intuition"
+      href: intuition.html
+  source_url: https://github.com/anthonyrocher/master_thesis
+  search: false
+output: distill::distill_article
