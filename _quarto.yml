@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ./_site
+  output-dir: docs
 
 website:
   site-url: https://anthonyrocher.github.io/master_thesis
@@ -12,7 +12,7 @@ website:
       - text: "Workflow"
         href: workflow.html
   search: false
-  announcement: 
+  announcement:
     icon: info-circle
     dismissable: true
     content: "**Alert** - Page under construction."
