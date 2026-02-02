@@ -18,7 +18,7 @@
     "href": "workflow.html",
     "title": "Workflow",
     "section": "",
-    "text": "This page describes my workflow.\n\n\nData can be found on the MLIT Dataset : https://www.reinfolib.mlit.go.jp/realEstatePrices/. It contains all the real estates price transactions all over Japan since 2003.\n\n# Load libraries\nlibrary(ggplot2)\n\n\n\n\nPerform your analysis here.\n\n# Example plot\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal() +\n  labs(title = \"Car Weight vs MPG\")\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\n\nDocument your findings and conclusions.\n\nBack to Home"
+    "text": "The data used in this analysis comes from the MLIT Dataset, which contains records of real estate price transactions across Japan since 2003.\nYou can select the prefectures you want to download. I chose to download all of them and ended up with 47 datasets, corresponding to the 47 prefectures of Japan.\n\n\n\nI use Stata to combine the 47 datasets and save the big one file as data_mlit, since Stata is more convenient for handling encoding issues.\n\ncd \"/Users/anthony/Desktop/master_thesis/data/raw/mlit\"\n\nlocal prefectures : dir \".\" files \"*.csv\"\nclear\n\nforeach prefecture of local prefectures {\n    preserve\n    import delimited \"`f'\", clear\n    tempfile temp\n    save `temp'\n    restore \n    append using `temp'\n}\n\nsave data_mlit, replace\n\nFor the cleaning part, I go back using R. Let’s clean this database!"
   },
   {
     "objectID": "workflow.html#my-workflow",
@@ -26,5 +26,26 @@
     "title": "Workflow",
     "section": "",
     "text": "This page describes my workflow.\n\n\nData can be found on the MLIT Dataset : https://www.reinfolib.mlit.go.jp/realEstatePrices/. It contains all the real estates price transactions all over Japan since 2003.\n\n# Load libraries\nlibrary(ggplot2)\n\n\n\n\nPerform your analysis here.\n\n# Example plot\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal() +\n  labs(title = \"Car Weight vs MPG\")\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\n\nDocument your findings and conclusions.\n\nBack to Home"
+  },
+  {
+    "objectID": "workflow.html#data-wrangling",
+    "href": "workflow.html#data-wrangling",
+    "title": "Workflow",
+    "section": "",
+    "text": "The data used in this analysis comes from the MLIT Dataset, which contains records of real estate price transactions across Japan since 2003.\nYou can select the prefectures you want to download. I chose to download all of them and ended up with 47 datasets, corresponding to the 47 prefectures of Japan.\n\n\n\nI use Stata to combine the 47 datasets and save the big one file as data_mlit, since Stata is more convenient for handling encoding issues.\n\ncd \"/Users/anthony/Desktop/master_thesis/data/raw/mlit\"\n\nlocal prefectures : dir \".\" files \"*.csv\"\nclear\n\nforeach prefecture of local prefectures {\n    preserve\n    import delimited \"`f'\", clear\n    tempfile temp\n    save `temp'\n    restore \n    append using `temp'\n}\n\nsave data_mlit, replace\n\nFor the cleaning part, I go back using R. Let’s clean this database!"
+  },
+  {
+    "objectID": "workflow.html#data-cleaning",
+    "href": "workflow.html#data-cleaning",
+    "title": "Workflow",
+    "section": "Data cleaning",
+    "text": "Data cleaning\nMore coding samples will be available soon.\n\n# Example plot\nlibrary(ggplot2)\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal() +\n  labs(title = \"Car Weight vs MPG\")"
+  },
+  {
+    "objectID": "workflow.html#analysis",
+    "href": "workflow.html#analysis",
+    "title": "Workflow",
+    "section": "Analysis",
+    "text": "Analysis\n\nlibrary(ggplot2)\n\nLook forward for the results!\n\nBack to Home"
   }
 ]

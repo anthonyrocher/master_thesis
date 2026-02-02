@@ -2,39 +2,59 @@
 title: "Workflow"
 ---
 
-## My Workflow
+## Data wrangling
 
-This page describes my workflow.
+### The MLIT Dataset
 
-### Data wrangling
+The data used in this analysis comes from the [MLIT Dataset](https://www.reinfolib.mlit.go.jp/realEstatePrices/), which contains records of real estate price transactions across Japan since 2003.
 
-Data can be found on the MLIT Dataset : https://www.reinfolib.mlit.go.jp/realEstatePrices/. It contains all the real estates price transactions all over Japan since 2003.
+You can select the prefectures you want to download. I chose to download all of them and ended up with 47 datasets, corresponding to the 47 prefectures of Japan.
 
-```{r}
-# Load libraries
-library(ggplot2)
+### Loading the data
+
+I use Stata to combine the 47 datasets and save the big one file as `data_mlit`, since Stata is more convenient for handling encoding issues.
+
+```{stata}
+#| eval: false
+cd "/Users/anthony/Desktop/master_thesis/data/raw/mlit"
+
+local prefectures : dir "." files "*.csv"
+clear
+
+foreach prefecture of local prefectures {
+	preserve
+	import delimited "`f'", clear
+	tempfile temp
+	save `temp'
+	restore 
+	append using `temp'
+}
+
+save data_mlit, replace
 ```
 
-### Data cleaning
+For the cleaning part, I go back using R. Let's clean this database!
 
-Perform your analysis here.
+## Data cleaning
+
+More coding samples will be available soon.
 
 ```{r}
 # Example plot
+library(ggplot2)
 ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point() +
   theme_minimal() +
   labs(title = "Car Weight vs MPG")
 ```
 
-### Analysis
+## Analysis
 
 ```{r}
 library(ggplot2)
 ```
 
-
-Document your findings and conclusions.
+Look forward for the results!
 
 ------------------------------------------------------------------------
 
