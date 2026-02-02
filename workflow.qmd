@@ -10,9 +10,9 @@ The data used in this analysis comes from the [MLIT Dataset](https://www.reinfol
 
 You can select the prefectures you want to download. I chose to download all of them and ended up with 47 datasets, corresponding to the 47 prefectures of Japan.
 
-### Loading the data
+### Wrangling the data
 
-I use Stata to combine the 47 datasets and save the big one file as `data_mlit`, since Stata is more convenient for handling encoding issues.
+I use Stata to combine the 47 datasets and save the big one file as `data_mlit`, since Stata is more convenient for handling encoding issues. Note that it might take some time.
 
 ```{stata}
 #| eval: false
@@ -33,7 +33,39 @@ foreach prefecture of local prefectures {
 save data_mlit, replace
 ```
 
-For the cleaning part, I go back using R. Let's clean this database!
+### Importing the data
+
+I go back using R here. The data take a lot of time to load.
+
+```{r}
+#| label: package-wrangling
+#| code-fold: true
+#| code-summary: "Show code to load packages"
+#| echo: true
+#| message: false
+#| warning: false
+
+library(haven)
+library(tidyverse)
+library(kableExtra)
+```
+
+```{r}
+#| cache: true
+#| eval: false
+data_mlit_raw <- read_dta("/Users/anthony/Desktop/master_thesis/data/raw/mlit/data_mlit.dta")
+data_mlit <- data_mlit_raw
+```
+
+Since loading the data requires a lot of time, I generate also a sample in case, 10% of the initial *data_mlit*.
+
+```{r}
+#| eval: false
+data_mlit_sample <- data_mlit |>
+  slice_sample(prop = 0.1)
+```
+
+Let's clean this database!
 
 ## Data cleaning
 
